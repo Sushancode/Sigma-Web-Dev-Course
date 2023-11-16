@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-7</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 18px;
+        margin-bottom: 90px;
+        margin-right: 50px;
+      }
+      nav ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style-type: none;
+        padding-left: 130px;
+      }
+      nav ul a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .welcome {
+        margin-left: 310px;
+        margin-right: 200px;
+      }
+      .welcome div:first-child {
+        font-size: 48px;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .welcome div:nth-child(2) {
+        font-size: 24px;
+        text-align: center;
+      }
+      .welcome div:nth-child(3) {
+        text-align: center;
+      }
+      .mac {
+        background-color: rgb(0, 182, 209);
+        color: white;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 700;
+        height: 48px;
+        width: 292.263px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         /* margin-left: 368px; */
+        margin-top: 33px;
+        margin-left: 36.5%;
+        /* margin-right: 45vw; */
+      }
+      .mac a{
+        text-decoration: none;
+        color: white;
+      }
+      .release {
+        font-size: x-large;
+        margin-top: 50px;
+        display: flex;
+      }
+      re {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      main {
+        display: grid;
+        margin-top: 30px;
+        grid-template-columns: 329px 329px 329px;
+        /* grid-template-rows: repeat(auto-fill, minmax(100px, 1fr)); */
+        grid-template-rows: 181.7px 181.7px 181.7px 181.7px;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        align-content: center;
+        gap: 3.5px;
+        margin-left: 70px;
+      }
+      @media only screen and (max-width: 900px) {
+        main {
+          display: grid;
+          margin-top: 30px;
+          grid-template-columns: 329px;
+          grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+          align-items: center;
+          justify-items: center;
+          justify-content: center;
+          align-content: center;
+          gap: 3.5px;
+          margin-left: 70px;
+        }
+        
+      }
+      .english ,.German ,.Italian ,.Spanish ,.French ,.BrazilianPortuguese ,.Japanese ,.Korean ,.Chinese ,.TraditionalChinese{
+        background-color: rgb(249, 249, 249);
+        border-radius: 5px;
+        height: 157.7px;
+        width: 300.078px;
+        font-weight: 700;
+        text-align: center;
+        color: white;
+      }
+      .english p ,.German p ,.German p ,.Italian p ,.Spanish p ,.French p ,.BrazilianPortuguese p ,.Japanese p ,.Korean p ,.Chinese p ,.TraditionalChinese p {
+        font-size: 20px;
+        margin-bottom: 45px;
+        color: black;
+        margin-top: 20px;
+      }
+      .english div:nth-child(2) ,.German div:nth-child(2) ,.Italian div:nth-child(2) ,.Spanish div:nth-child(2) ,.French div:nth-child(2) ,.BrazilianPortuguese div:nth-child(2) ,.Japanese div:nth-child(2) ,.Korean div:nth-child(2) ,.Chinese div:nth-child(2) ,.TraditionalChinese div:nth-child(2){
+        font-size: 12px;
+        height: 36.4px;
+        width: 125.025px;
+        display: inline-block;
+        background-color: rgb(0, 182, 209);
+        margin: 5px;
+        border-radius: 5px;
+        line-height: 36px;
+      }
+      .english div:nth-child(3) ,.German div:nth-child(3) ,.Italian div:nth-child(3) ,.Spanish div:nth-child(3) ,.French div:nth-child(3) ,.BrazilianPortuguese div:nth-child(3) ,.Japanese div:nth-child(3) ,.Korean div:nth-child(3) ,.Chinese div:nth-child(3) ,.TraditionalChinese div:nth-child(3){
+        font-size: 12px;
+        height: 36.4px;
+        width: 125.025px;
+        display: inline-block;
+        background-color: rgb(92, 184, 92);
+        margin: 5px;
+        border-radius: 5px;
+        line-height: 36px;
+      }
+      .english div:nth-child(2) a ,.German div:nth-child(2) a ,.Italian div:nth-child(2) a ,.Spanish div:nth-child(2) a ,.French div:nth-child(2) a ,.BrazilianPortuguese div:nth-child(2) a ,.Japanese div:nth-child(2) a ,.Korean div:nth-child(2) a ,.Chinese div:nth-child(2) a ,.TraditionalChinese div:nth-child(2) a{
+        text-decoration: none;
+        color: white;
+      }
+      .english div:nth-child(3) a ,.German div:nth-child(3) a ,.Italian div:nth-child(3) a ,.Spanish div:nth-child(3) a, .French div:nth-child(3) a ,.BrazilianPortuguese div:nth-child(3) a ,.Japanese div:nth-child(3) a ,.Korean div:nth-child(3) a ,.Chinese div:nth-child(3) a ,.TraditionalChinese div:nth-child(3) a{
+        text-decoration: none;
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <img
+          src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png"
+          alt="Logo"
+          height="60px" />
+      </div>
+      <ul>
+        <li><a href="/">Products &#x25BE; </a></li>
+        <li><a href="/">Pricing &#x25BE; </a></li>
+        <li><a href="/">Resources &#x25BE; </a></li>
+        <li><a href="/">About us &#x25BE; </a></li>
+        <li>
+          <a href="/"
+            ><img
+              src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png"
+              alt="Lang"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="welcome">
+      <div>
+        Download <b>Ultraedit</b> for Windows
+        <img
+          src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png"
+          alt="Reviews" />
+      </div>
+      <div class="dowtext">
+        Download and try UltraEdit before you buy it! This download includes the
+        full Windows &nbsp;&nbsp;&nbsp;version of the text editor.
+      </div>
+      <div class="mac"><a href="https://www.ultraedit.com/downloads/uex-thank-you">DOWNLOAD MAC OR LINUX VERSION</a></div>
+      <div class="release">
+        <img
+          src="https://www.ultraedit.com/wp-content/uploads/2022/11/UE.png"
+          alt="UE" />
+        &nbsp;&nbsp;&nbsp;Download UltraEdit &nbsp;
+        <re>v2023.1(released 08/16/2023) | Hotfix </re>
+      </div>
+    </div>
+
+    <main>
+      <div class="english">
+        <p>English</p>
+        <div>
+          <a
+            href="https://downloads.ultraedit.com/main/ue/win/ue_english.exe?_gl=1*eb11ku*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA0NDk2Ni42LjEuMTcwMDA0NTE5Ny41OS4wLjA."
+            >Download 32-bit</a
+          >
+        </div>
+        <div>
+          <a
+            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1ndntvz*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA0NDk2Ni42LjEuMTcwMDA0NTE5Ny41OS4wLjA."
+            >Download 64-bit</a
+          >
+        </div>
+      </div>
+      <div class="German">
+        <p>Deutsch</p>
+        <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_german.exe?_gl=1*1is6ole*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA1ODkxMS43LjAuMTcwMDA1ODkxMS42MC4wLjA.">Download 32-bit</a></div>
+        <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_german_64.exe?_gl=1*t78yuk*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA1ODkxMS43LjAuMTcwMDA1ODkxMS42MC4wLjA.">Download 64-bit</a></div>
+      </div>
+      <div class="Italian">
+        <p>Italiano</p>
+        <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_italian.exe?_gl=1*t78yuk*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA1ODkxMS43LjAuMTcwMDA1ODkxMS42MC4wLjA.">Download 32-bit</a></div>
+        <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_italian_64.exe?_gl=1*t78yuk*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA1ODkxMS43LjAuMTcwMDA1ODkxMS42MC4wLjA.">Download 64-bit</a></div>
+      </div>
+      <div class="Spanish">
+        <p>Español</p>
+        <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_spanish.exe?_gl=1*t78yuk*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA1ODkxMS43LjAuMTcwMDA1ODkxMS42MC4wLjA.">Download 32-bit</a></div>
+        <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_spanish_64.exe?_gl=1*3m0o1i*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA1ODkxMS43LjAuMTcwMDA1ODkxMS42MC4wLjA.">Download 64-bit</a></div>
+      </div>
+      <div class="French">
+        <p>français</p>
+        <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_french.exe?_gl=1*3m0o1i*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA1ODkxMS43LjAuMTcwMDA1ODkxMS42MC4wLjA.">Download 32-bit</a></div>
+        <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_french_64.exe?_gl=1*3m0o1i*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA1ODkxMS43LjAuMTcwMDA1ODkxMS42MC4wLjA.">Download 64-bit</a></div>
+      </div>
+      <div class="BrazilianPortuguese">
+        <p>Português brasileiro</p>
+        <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_portuguese.exe?_gl=1*3m0o1i*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA1ODkxMS43LjAuMTcwMDA1ODkxMS42MC4wLjA.">Download 32-bit</a></div>
+        <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_portuguese_64.exe?_gl=1*3m0o1i*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA1ODkxMS43LjAuMTcwMDA1ODkxMS42MC4wLjA.">Download 64-bit</a></div>
+      </div>
+      <div class="Japanese">
+        <p>日本</p>
+        <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_japanese.exe?_gl=1*3m0o1i*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA1ODkxMS43LjAuMTcwMDA1ODkxMS42MC4wLjA.">Download 32-bit</a></div>
+        <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_japanese_64.exe?_gl=1*yxgeqr*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA1ODkxMS43LjAuMTcwMDA1ODkxMS42MC4wLjA.">Download 64-bit</a></div>
+      </div>
+      <div class="Korean">
+        <p>한국어</p>
+        <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_korean.exe?_gl=1*yxgeqr*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA1ODkxMS43LjAuMTcwMDA1ODkxMS42MC4wLjA.">Download 32-bit</a></div>
+        <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_korean_64.exe?_gl=1*yxgeqr*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA1ODkxMS43LjAuMTcwMDA1ODkxMS42MC4wLjA.">Download 64-bit</a></div>
+      </div>
+      <div class="Chinese">
+        <p>中国</p>
+        <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_chinese.exe?_gl=1*yxgeqr*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA1ODkxMS43LjAuMTcwMDA1ODkxMS42MC4wLjA.">Download 32-bit</a></div>
+        <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_64.exe?_gl=1*yxgeqr*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA1ODkxMS43LjAuMTcwMDA1ODkxMS42MC4wLjA.">Download 64-bit</a></div>
+      </div>
+      <div class="TraditionalChinese">
+        <p>中國</p>
+        <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_traditional.exe?_gl=1*yxgeqr*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA1ODkxMS43LjAuMTcwMDA1ODkxMS42MC4wLjA.">Download 32-bit</a></div>
+        <div><a href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_traditional_64.exe?_gl=1*yxgeqr*_ga*MTY0NDM1MDYxOC4xNjk5OTYxNTk2*_ga_QNXHVTPWNS*MTcwMDA1ODkxMS43LjAuMTcwMDA1ODkxMS42MC4wLjA.">Download 64-bit</a></div>
+      </div>
+    </main>
+  </body>
+</html>

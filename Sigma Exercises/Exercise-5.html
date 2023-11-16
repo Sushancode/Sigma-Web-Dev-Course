@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 5</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      body {
+        background-color: black;
+      }
+
+      .popup {
+        position: fixed;
+        top: 85vh;
+        left: 93vw;
+      }
+
+      .popup img {
+        border-radius: 30px;
+        position: fixed;
+        margin: 10px;
+      }
+header{
+  position: sticky;
+  top: 0px;
+}
+      nav ul {
+        background-color: rgb(216, 75, 255);
+        padding: 16px 5px;
+        margin-bottom: 1px;
+      }
+      nav ul li {
+        list-style-type: none;
+        display: inline;
+        padding: 15px;
+        font-weight: bolder;
+        font-size: 20px;
+      }
+
+      .mainw {
+        height: 80vh;
+        width: 100%;
+        border: 2px solid black;
+        background-color: green;
+      }
+      .mainw div:first-child {
+        border: 2px solid black;
+        height: 500px;
+        width: 500px;
+        background-color: rgb(253, 152, 169);
+        display: inline-block;
+        margin: 20px 105px;
+      }
+      .mainw div:nth-child(2) {
+        border: 2px solid black;
+        height: 500px;
+        width: 500px;
+        background-color: rgb(0, 145, 255);
+        display: inline-block;
+        margin: 20px 105px;
+      }
+
+      footer div {
+        font-size: 70px;
+        color: white;
+        border: 2px solid white;
+        border-radius: 40px;
+        width: 70vw;
+        margin: 10px 10vw;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 140px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="popup">
+      <img
+        src="https://yt3.ggpht.com/ytc/APkrFKZGyiFJtoR2Isio_S591bOWpCKBFaIzqSuAG56ubA=s88-c-k-c0x00ffffff-no-rj"
+        alt="popup"
+        height="60px"
+        width="60px" />
+    </div>
+
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Contacts</li>
+          <li>Blog</li>
+          <li>About</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="mainw">
+        <div class="window">
+          <img
+            src="https://i.ytimg.com/vi/ojuUnfqnUI0/sddefault.jpg"
+            alt="Sigma course"
+            height="500px"
+            width="500px" />
+        </div>
+        <div class="window">
+          <img
+            src="https://i.ytimg.com/vi/vlAWzsGd-Yk/hqdefault.jpg"
+            alt="Sigma course"
+            height="500px"
+            width="500px" />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>Welcome to this Sigma Web Development Express</div>
+    </footer>
+  </body>
+</html>
